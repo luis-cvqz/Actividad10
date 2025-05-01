@@ -1,0 +1,16 @@
+Inicio
+	num1 <- 0
+	num2 <- 0
+
+	Escribir "Introduce primer número"
+	Leer num1
+
+	Escribir "Introduce segundo número"
+	Leer num2
+
+	Si (num1 > num2) Entonces
+		Escribir "El mayor es el número ", num1
+	SiNo
+		Escribir "El mayor es el número ", num2
+	FinSi
+Fin
