@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios - Ejercicio 12</title>
+  </head>
+  <body>
+    <form name="fdatos">
+      <label for="altura">Altura en cm (ej: 155)</label>
+      <input type="text" size="10" name="altura" /><br /><br />
+      <label for="peso">Peso en kg (ej: 80)</label>
+      <input type="text" size="10" name="peso" /><br /><br />
+      <label for="edad">Edad (ej: 45)</label>
+      <input type="text" size="10" name="edad" /><br /><br />
+      <label for="sexo">Sexo (H/M/O)</label>
+      <input type="text" size="10" name="sexo" /><br /><br />
+      <input
+        id="pideal"
+        type="button"
+        value="Calcula"
+        onclick="pesoreferencia(fdatos.altura.value,fdatos.peso.value,fdatos.edad.value,
+          fdatos.sexo.value)"
+      />
+      <input type="reset" value="Reset" />
+      <br /><br />
+      El peso aproximado de referencia es: <span id="resultado"></span>
+    </form>
+    <script src="ejercicio12.js"></script>
+  </body>
+</html>
